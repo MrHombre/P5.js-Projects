@@ -2,13 +2,16 @@
 function diastic(seed, words) {
 
   var phrase = "";
+  var currentWord = 0;
 
   for (var i = 0; i < seed.length; i++) {
     var c = seed.charAt(i);
 
-    for (var j = 0; j < words.length; j++) {
+    for (var j = currentWord; j < words.length; j++) {
       if (wrods[j].charAt(i) == c) {
         phrase += words[j];
+        phrase += " ";
+        currentWord = j + 1;
         //console.log(words[j]);
         break;
       }
