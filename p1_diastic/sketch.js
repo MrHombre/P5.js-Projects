@@ -1,18 +1,19 @@
 var srctxt;
 
 function preload() {
-  srctxt = loadStrings('text.text');
+  srctxt = loadStrings('text.txt');
 }
 
 
 function setup() {
   noCanvas();
-  srctxt = join(srctext, ' ');
+  srctxt = join(srctxt, ' ');
 
   var seed = select("#seed");
   var submit = select("#submit");
   submit.mousePressed(function() {
     createP(seed.value());
+    createP(srctxt);
   });
 
 
