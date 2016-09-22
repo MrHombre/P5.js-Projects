@@ -14,8 +14,10 @@ function setup() {
   var seed = select("#seed");
   var submit = select("#submit");
   submit.mousePressed(function() {
-    createP(seed.value());
-    createP(srctxt);
+
+    var phrase = diastic(seed.value(), words);
+    //createP(seed.value());
+    //createP(srctxt);
   });
 
 
