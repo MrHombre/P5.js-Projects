@@ -1,4 +1,5 @@
 var srctxt;
+var words;
 
 function preload() {
   srctxt = loadStrings('text.txt');
@@ -8,6 +9,7 @@ function preload() {
 function setup() {
   noCanvas();
   srctxt = join(srctxt, ' ');
+  words = splitTokens(srctxt, ' ,!.?');
 
   var seed = select("#seed");
   var submit = select("#submit");
