@@ -7,6 +7,7 @@ function preload() {
 
 function setup() {
   noCanvas();
+  srctxt = join(srctext, ' ');
 
   var seed = select("#seed");
   var submit = select("#submit");
