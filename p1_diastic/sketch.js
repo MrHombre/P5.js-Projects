@@ -1,3 +1,10 @@
+var srctxt;
+
+function preload() {
+  srctxt = loadStrings('text.text');
+}
+
+
 function setup() {
   noCanvas();
 
