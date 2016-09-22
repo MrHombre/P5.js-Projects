@@ -1,3 +1,19 @@
+//Diastic Machine algorithm
+function diastic(seed, words) {
+  for (var i = 0; i < seed.length; i++) {
+    var c = seed.charAt(i);
+
+    for (var j = 0; j < words.length; j++) {
+      if (wrods[j].charAt(i) == c) {
+        console.log(words[j]);
+        break;
+      }
+    }
+  }
+}
+
+
+
 var srctxt;
 var words;
 
