@@ -1,6 +1,8 @@
 //SpreadSheet fyi
 var sheet;
 
+var txt = '$$Exclamation$$! they said $$Adverb$$ as they jumped into their $$Noun$$ and flew off with their $$Adjective$$ $$PluralNoun$$.';
+
 function setup() {
   noCanvas(); //Remove that Canvas
   Tabletop.init( {
@@ -13,8 +15,14 @@ function setup() {
     button.mousePressed(generate);
 }
 
+function replacer(match, pos) {
+
+}
+
 function generate() {
-  console.log('generate'); //Testing to make sure things work
+  //console.log('generate'); //Testing to make sure things work
+  var madlib = txt.replace(/$$(.*?)$$/, replacer);
+  createP(txt);
 }
 
 function gotData(data, tabletop) {
