@@ -16,7 +16,7 @@ function setup() {
 }
 
 function replacer(match, pos) {
-
+  return pos;
 }
 
 function generate() {
