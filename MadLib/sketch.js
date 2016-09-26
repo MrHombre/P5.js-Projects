@@ -21,8 +21,8 @@ function replacer(match, pos) {
 
 function generate() {
   //console.log('generate'); //Testing to make sure things work
-  var madlib = txt.replace(/$$(.*?)$$/, replacer);
-  createP(txt);
+  var madlib = txt.replace(/\$\$(.*?)\$\$/, replacer);
+  createP(madlib);
 }
 
 function gotData(data, tabletop) {
