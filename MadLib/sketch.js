@@ -21,7 +21,7 @@ function replacer(match, pos) {
 
 function generate() {
   //console.log('generate'); //Testing to make sure things work
-  var madlib = txt.replace(/\$\$(.*?)\$\$/, replacer);
+  var madlib = txt.replace(/\$\$(.*?)\$\$/g, replacer);
   createP(madlib);
 }
 
