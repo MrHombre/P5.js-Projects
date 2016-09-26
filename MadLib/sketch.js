@@ -17,6 +17,7 @@ function setup() {
 
 function replacer(match, pos) {
   var entry = random(data);
+  return entry[pos]; //looking up the property of the text within the pos
 }
 
 function generate() {
