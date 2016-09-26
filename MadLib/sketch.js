@@ -1,7 +1,7 @@
 function setup() {
 
   Tabletop.init( {
-    key: '0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE',
+    key: '1grB0v27HNKxTppSnBL4zQ67I00v_vfrL40hUNy5MnI8',
       callback: function(data, tabletop) {
         console.log(data)
       },
